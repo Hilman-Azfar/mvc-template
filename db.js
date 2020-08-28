@@ -33,19 +33,19 @@ if( process.env.DATABASE_URL ){
 
 }else{
   configs = {
-    user: 'akira',
+    user: 'Hilman',
     host: '127.0.0.1',
-    database: 'testdb',
+    database: 'practice',
     port: 5432
   };
 }
-
 
 const pool = new pg.Pool(configs);
 
 pool.on('error', function (err) {
   console.log('idle client error', err.message, err.stack);
 });
+
 
 
 
